@@ -11,9 +11,6 @@ $ git status
 $ cat .git/info/exclude
 # ignore objects and archives, anywhere in the tree.
 # *.[oa]
-data/
-plot/
-temp/
 $ cat Documentation/.gitignore
 # ignore generated html files,
 #*.html
@@ -21,6 +18,7 @@ $ cat Documentation/.gitignore
 *.Rhistory
 *.Rproj
 *.user
+*.jpg
 # except foo.html which is maintained by hand
 # !foo.html
 $ git status
