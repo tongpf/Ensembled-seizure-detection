@@ -31,4 +31,4 @@ We have already converted the .edf data of the first subject chb01 to .csv files
 
 ## Time complexity
 
-For such a high frequency multi-channel EEG data, our procedure required 20 minutes to obtain the final results for one hour EEG data in an AMD Milan EPYC 7T83 (2.45 GHz) platform with 10 cores and 20 processes.
+For such a high frequency multi-channel EEG data, our procedure required 20 minutes to obtain the final results for one hour EEG data in an AMD Milan EPYC 7T83 (2.45 GHz) platform using 10 cores and 20 processes.
