@@ -5,7 +5,7 @@ train_test_split = function(training_sample_prop,sample_freq,non_seizure_segment
   data_segment_length = 0
   for (i in c(1:length(allfiles))){
     csvfile = allfiles[i]
-    EEGdata_label = fread(paste0(datadir,'/chb01/',csvfile),
+    EEGdata_label = fread(paste0(datadir,csvfile),
                           header=TRUE,data.table=FALSE,
                           select = c('index','hour','minute','sec','hertz','label1'))
     EEGdata_label$file_idx = i
@@ -68,7 +68,7 @@ train_test_split = function(training_sample_prop,sample_freq,non_seizure_segment
   EEGdata = list()
   for (i in train_files_unique){
     csvfile = allfiles[i]
-    EEGdata_temp = fread(paste0(datadir,'/chb01/',csvfile),
+    EEGdata_temp = fread(paste0(datadir,csvfile),
                          header=TRUE,data.table=FALSE,drop = 1)
     EEGdata_temp = EEGdata_temp[,c(-26,-30)] #remove the duplicate columns P7-T7 and T8-P8
     
@@ -192,7 +192,7 @@ SC_coeff_cal = function(EEGdata, ICnum, verbose = FALSE, ifplot = FALSE){
   print(energydim)
   print(energydiff)
   
-  energydim = energydim[energydiff>1]
+  #energydim = energydim[energydiff>1]
   
   #select appropriate ICs
   i = 1

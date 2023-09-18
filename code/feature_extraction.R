@@ -177,7 +177,7 @@ features_all <- foreach (csvfile = allfiles,.inorder=FALSE,
                      'FP2-F8','F8-T8','T8-P8','P8-O2',
                      'FZ-CZ','CZ-PZ','T7-FT9','FT9-FT10','FT10-T8')
     
-    EEGdata = fread(paste0(datadir,'/chb01/',csvfile),
+    EEGdata = fread(paste0(datadir,csvfile),
                     header=TRUE,data.table=FALSE,drop = 1)
     EEGdata = EEGdata[,c(-26,-30)] #remove the duplicate columns P7-T7 and T8-P8
     EEGdata[8:28] = EEGdata[8:28]*1e6

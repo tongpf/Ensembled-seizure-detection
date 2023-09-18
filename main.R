@@ -31,12 +31,12 @@ library(WeightedROC)
 
 rm(list=ls())
 set.seed(2023)
-datadir = './data/'
+datadir = './data/chb01/'
 plotdir = './plot/'
 codedir = './code/'
 tempdir = './temp/'
 
-allfiles = dir(paste0(datadir,'/chb01/'))
+allfiles = dir(paste0(datadir))
 
 filehours = 1  # each file contains one hours EEG data
 training_sample_prop = 0.05
