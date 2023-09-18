@@ -1,7 +1,3 @@
-#we only keep the index of training set to save memory
-EEGdata_train_index = EEGdata[,c(1:7)]
-rm(EEGdata)
-
 keylevel = sort(cp_stat_list$scale_range)
 thr = unlist(cp_stat_list$final_CUSUM_thrdf)
 

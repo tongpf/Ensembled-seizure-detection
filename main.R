@@ -83,6 +83,10 @@ save.image(".RData")
 # extract and save features from the entire raw EEG series. The training and test
 # sets are marked according to the indexes listed in EEGdata
 
+#we only keep the index of training set to save memory
+EEGdata_train_index = EEGdata[,c(1:7)]
+rm(EEGdata)
+
 source(paste0(codedir,'feature_extraction.R'))
 
 save.image(".RData")
