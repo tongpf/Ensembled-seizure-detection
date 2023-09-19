@@ -18,7 +18,7 @@ This repo has been tested at the following operating system:
 
 ## Example data sets
 
-The well known CHB-MIT scalp EEG database (https://physionet.org/content/chbmit/1.0.0/) can be used for evaluating the model performance, which cantains 24 subjects with a total of 198 seizures. However, the original .edf files should be coverted to .csv files for R to read. The example .csv header is listed in example_head.csv, the column arangement should be the same with this file.
+The well known CHB-MIT scalp EEG database (https://physionet.org/content/chbmit/1.0.0/) can be used for evaluating the model performance, which cantains 24 subjects with a total of 198 seizures. However, the original .edf files should be coverted to .csv files for R to read. The example .csv header is listed in example_head.csv, the column arangement should be the same with this file. We note that among the columns of example_head.csv, label1 = 0 means non-seizure period, and label1 = 1 means seizure period. The label2 column is not used for the CHB-MIT dataset.
 
 We have already converted the .edf data of the first subject chb01 to .csv files. One can download and unzip the data from google drive (https://drive.google.com/file/d/1d5YaM1AQw_06nJbtKVS4eqfLA7QCB-6w/view?usp=sharing) into /data/chb01/ directory to run the example codes.
 
