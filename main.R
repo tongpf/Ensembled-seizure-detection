@@ -27,6 +27,7 @@ library(mlr3filters)
 library(mlr3fselect)
 library(mlr3pipelines)
 library(e1071)
+library(ranger)
 library(WeightedROC)
 
 rm(list=ls())
