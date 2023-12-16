@@ -1,6 +1,6 @@
 # Ensembled-seizure-detection
 
-This repo contains the R source code for the unpublished paper "Ensembled Seizure Detection based on Small Training Samples" (under peer review in IEEE TSP, all right reserved). 
+This repo contains the R source code for the published paper "Ensembled Seizure Detection based on Small Training Samples" ([IEEE TSP, 2024](https://ieeexplore.ieee.org/document/10323226)). 
 
 Fully automated seizure detection algorithm can relieve doctors from the routine work of inspecting the long-term electroencephalography EEG data. However, due to the large inter-individual variability of seizure types, the majority of researches still relies on patient specific models to achieve higher detection accuracy.
 
